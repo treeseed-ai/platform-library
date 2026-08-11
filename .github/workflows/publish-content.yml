@@ -38,8 +38,7 @@ jobs:
           TREESEED_PROJECT_ID: platform
           TREESEED_CLOUDFLARE_ACCOUNT_ID: ${{ vars.TREESEED_CLOUDFLARE_ACCOUNT_ID }}
           TREESEED_CONTENT_BUCKET_NAME: ${{ vars.TREESEED_CONTENT_BUCKET_NAME }}
-          TREESEED_R2_ACCESS_KEY_ID: ${{ secrets.TREESEED_R2_ACCESS_KEY_ID }}
-          TREESEED_R2_SECRET_ACCESS_KEY: ${{ secrets.TREESEED_R2_SECRET_ACCESS_KEY }}
+          TREESEED_CLOUDFLARE_API_TOKEN: ${{ secrets.TREESEED_CLOUDFLARE_API_TOKEN }}
         run: node ./.treeseed/content-publisher/dist/scripts/content/publish-content.js --root . --content-path src/content --source-commit "${GITHUB_SHA}" --ref "${GITHUB_REF_NAME}" --channel "${GITHUB_REF_NAME}" > content-publication-receipt.json
       - uses: actions/upload-artifact@v4
         with:
