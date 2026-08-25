@@ -1,4 +1,4 @@
-name: Publish content
+name: Publish library
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: content-${{ github.repository }}-${{ github.ref }}
+  group: library-${{ github.repository }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -40,7 +40,7 @@ jobs:
           TREESEED_CLOUDFLARE_ACCOUNT_ID: ${{ vars.TREESEED_CLOUDFLARE_ACCOUNT_ID }}
           TREESEED_CONTENT_BUCKET_NAME: ${{ vars.TREESEED_CONTENT_BUCKET_NAME }}
           TREESEED_CLOUDFLARE_API_TOKEN: ${{ secrets.TREESEED_CLOUDFLARE_API_TOKEN }}
-        run: node ./.treeseed/content-publisher/dist/scripts/content/publish-content.js --root . --content-path src/content --source-commit "${GITHUB_SHA}" --ref "${GITHUB_REF_NAME}" --channel "${TREESEED_CONTENT_CHANNEL}" > content-publication-receipt.json
+        run: node ./.treeseed/content-publisher/dist/scripts/content/publish-content.js --root . --content-path . --source-commit "${GITHUB_SHA}" --ref "${GITHUB_REF_NAME}" --channel "${TREESEED_CONTENT_CHANNEL}" > content-publication-receipt.json
       - uses: actions/upload-artifact@v4
         with:
           name: content-publication-${{ github.sha }}
