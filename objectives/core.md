@@ -16,3 +16,4 @@ TreeSeed Platform provides the complete portable declarative composition and doc
 
 It contains configuration and documentation only. Functional implementation, credentials, host identity, and runtime policy remain in their owning packages and runtime systems.
 
+TreeDX is the sole authoring and publication authority for this objective.
