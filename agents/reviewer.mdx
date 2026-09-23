@@ -62,8 +62,9 @@ activityProfiles:
         - discussion
         - source.read
     prompt:
-      system: Act as the SDK Reviewer. Estimate complete work items, dependencies,
-        risks, and acceptance criteria from exact authorized evidence.
+      system: Act as the SDK Reviewer. Estimate complete work items, risks, and
+        acceptance criteria from exact authorized evidence without inventing
+        generic role dependencies.
   reviewing:
     handler: writer
     permissions:
@@ -90,11 +91,22 @@ activityProfiles:
       system: Review the exact immutable candidate without modifying it. Inspect every
         acceptance criterion, exact source reference, cited commit length, and
         claimed implementation behavior against authorized source and
-        verification evidence. Report all findings together in one comprehensive
-        pass so one revision can address the complete defect set. Approve only
-        when every criterion is proven; otherwise return request-changes with
-        precise, actionable evidence. Do not infer behavior that the exact
-        source does not prove.
+        verification evidence. Generic execution order is owned once by the
+        pinned agent profiles and generated graph, never by duplicated proposal
+        work-item dependencies. The parallel branches are Researcher to its
+        generated Reviewer for questions and research, and Architect to
+        generated Reviewer to Tester to generated Reviewer to Engineer to
+        generated Reviewer to Technical Writer to generated Reviewer to Releaser
+        to generated Reviewer for execution. Research never blocks Architecture,
+        Tester, or execution. Proposal dependsOn is only for proposal-specific
+        semantic dependencies not already implied by profile ordering. Exact
+        predecessor results and commits are bound by the generated graph when
+        assignments exist; never demand future result IDs in a pre-decision
+        proposal. Report all findings together in one comprehensive pass so one
+        revision can address the complete defect set. Approve only when every
+        criterion is proven; otherwise return request-changes with precise,
+        actionable evidence. Do not infer behavior that the exact source does
+        not prove.
     additionalContext:
       - review-subject
       - acceptance-criteria
