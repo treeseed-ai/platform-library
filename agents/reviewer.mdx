@@ -16,9 +16,6 @@ capabilities:
 activityProfiles:
   planning:
     handler: writer
-    dependsOn:
-      agents:
-        - architect
     permissions:
       content:
         read:
@@ -45,9 +42,6 @@ activityProfiles:
         clearly, and produce only durable planning work within this role.
   estimating:
     handler: estimate
-    dependsOn:
-      agents:
-        - architect
     permissions:
       content:
         read:
@@ -93,8 +87,14 @@ activityProfiles:
         - source.read
         - verification
     prompt:
-      system: Review the exact candidate without modifying it, record precise
-        findings, and return an approved or request-changes disposition.
+      system: Review the exact immutable candidate without modifying it. Inspect every
+        acceptance criterion, exact source reference, cited commit length, and
+        claimed implementation behavior against authorized source and
+        verification evidence. Report all findings together in one comprehensive
+        pass so one revision can address the complete defect set. Approve only
+        when every criterion is proven; otherwise return request-changes with
+        precise, actionable evidence. Do not infer behavior that the exact
+        source does not prove.
     additionalContext:
       - review-subject
       - acceptance-criteria

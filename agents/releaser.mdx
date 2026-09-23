@@ -18,7 +18,7 @@ activityProfiles:
     handler: writer
     dependsOn:
       agents:
-        - architect
+        - technical-writer
     permissions:
       content:
         read:
@@ -47,7 +47,7 @@ activityProfiles:
     handler: estimate
     dependsOn:
       agents:
-        - architect
+        - technical-writer
     permissions:
       content:
         read:
@@ -74,7 +74,6 @@ activityProfiles:
     handler: releaser
     dependsOn:
       agents:
-        - engineer
         - technical-writer
     permissions:
       content:
@@ -94,6 +93,7 @@ activityProfiles:
         - source.read
         - verification
         - release
+        - source.write
     prompt:
       system: Integrate and release only the exact accepted SDK predecessors after all
         required verification succeeds.

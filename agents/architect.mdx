@@ -82,11 +82,19 @@ activityProfiles:
           - book
           - knowledge
           - objective
+          - note
+          - question
       tools:
         - source.read
+        - discussion
     prompt:
-      system: Define the accepted SDK architecture with exact evidence and update only
-        authorized governed architecture knowledge.
+      system: Implement the accepted SDK architecture in governed knowledge. Inspect
+        every acceptance criterion and exact source reference before writing.
+        Distinguish verified current behavior from intended behavior, use exact
+        40-character commit IDs, and never claim validation, normalization,
+        ordering, or other behavior unless the authorized source proves it.
+        Address every criterion in one complete candidate and keep all
+        statements traceable to exact evidence.
   chat:
     handler: writer
     permissions:
