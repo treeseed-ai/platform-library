@@ -1,0 +1,36 @@
+---
+schemaVersion: treeseed.discussion-message/v1
+id: 0d51584b54b1a7d25796af9b3e614c8b
+discussionRef:
+  store: treedx
+  model: discussion
+  id: portfolio-atlas-team-building
+  path: discussions/portfolio-atlas-team-building.mdx
+  revision: 1
+  digest: sha256:fcbe31f53e2990a8da562ce0d06b3ac11408fa10391a64013f2cc5485693d0e0
+authorRef:
+  store: postgresql
+  model: user
+  id: 49435480-41fe-4fae-b2f7-baceacea562a
+title: "Adrian Webb: portfolio-atlas-team-building"
+discussionId: portfolio-atlas-team-building
+authorId: 49435480-41fe-4fae-b2f7-baceacea562a
+authorType: user
+intent: discuss
+mentionedAgents:
+  - architect
+recipientIds:
+  - architect
+fileRefs: []
+contextRefs: []
+sourceMessageRefs: []
+createdAt: 2026-10-20T11:36:20.753Z
+---
+@platform/architect Your real team/proposal response is retained at Platform TreeDX 01a41e99d8ef4655db528a9c0a5fe086b3ed9e1d, discussion-messages/portfolio-atlas-team-building/response-bf65e6f97715b7e492d08790.mdx. Complete its admission-ready correction in the same JSON shape {team,profileChanges,proposal}. Keep the meaningful Atlas Admin implementation objective, exact source/objective/design refs, acceptance criteria, and independent review.
+
+Concrete corrections:
+1. Governed source YAML uses activityProfiles.acting.dependsOn.agents, not dependencies.acting.agents. Admin Engineer estimating and Reviewer estimating each currently depend on architect. Remove those unused estimate prerequisites for this implementation-first proposal, as the already-approved exact architecture is supplied; do not create a new make-work Architect assignment. Engineer acting currently depends on tester; remove that as you intended. Preserve planning dependencies, handlers, permissions, and the existing clock discipline.
+2. Keep architect as consulted existing design authority only, not a new scheduled task. The selected execution team is admin/engineer then admin/reviewer. Add only necessary bounded acting/reviewing prompts: no native subagents; only actual source work and exact candidate review; no broad suites/typecheck campaign/guarantees; first clock and a new successful clock before every separate command, including failed reads, final clock as last tool. Engineer commits local changes using declared robot identity Admin Engineer <admin-engineer@agents.treeseed.localhost>; provider independently verifies/publishes. Never tell it not to commit. Reviewer must never fabricate implementation/review approval or verification results.
+3. proposal must contain only supported create fields: title,summary,request,proposalTypes,objectiveRefs,evidenceRefs,executionPlan. Remove independentReview and configurationStatus from proposal; use workItems.review:required for actual independent review. Preserve that explanation in team or summary/request instead. The class should be canonical 'engineer' (existing class binding is engineer); don't add a project-UUID prefix if create expects the configured class key. Do not invent estimates: actual selected owners/reviewer will estimate.
+
+This is a correction to YOUR existing real proposal, not verification-only work. Return the full corrected JSON promptly using provided context, do not scan unrelated sources. No mutation/approval/execution has occurred yet. Broad source inspection is unnecessary. The integrator will apply your governed changes and admit your proposal through normal public boundaries.
