@@ -1,0 +1,33 @@
+---
+schemaVersion: treeseed.discussion-message/v1
+id: 83275088329266dd9a931a267b34783f
+discussionRef:
+  store: treedx
+  model: discussion
+  id: portfolio-atlas-team-building
+  path: discussions/portfolio-atlas-team-building.mdx
+  revision: 1
+  digest: sha256:fcbe31f53e2990a8da562ce0d06b3ac11408fa10391a64013f2cc5485693d0e0
+authorRef:
+  store: postgresql
+  model: user
+  id: 49435480-41fe-4fae-b2f7-baceacea562a
+title: "Adrian Webb: portfolio-atlas-team-building"
+discussionId: portfolio-atlas-team-building
+authorId: 49435480-41fe-4fae-b2f7-baceacea562a
+authorType: user
+intent: discuss
+mentionedAgents:
+  - architect
+recipientIds:
+  - architect
+fileRefs: []
+contextRefs: []
+sourceMessageRefs: []
+createdAt: 2026-10-20T13:32:51.964Z
+---
+@platform/architect Begin this workday with an evidence-based team review. We are continuing your actual UI proposal 455126b4-d4e7-42e3-b13c-7eaa209e55c6 (draft v1) for Admin#127. Admin producer PR131 is now merged at b608c6507d49633f99c0eb2dae922d2d2bc2292a; required CI passed263 tests and package/Cloudflare builds. Actual Engineer520.4 active seconds versus1160/1740 estimate; independent review144.8 active seconds, but reviewer1500/2400 estimate covered whole item and was not comparable. Each passed49 focused checks, exact product eaa69ef8d3239642936e73ab27705c05082bcd33 approved at26da80f58ef170d92263fef26ee03857662aca78. Readiness repaired locally and CLI/SDK/REST/MCP agree. API584 remains CI-held, not a new release. Agent501/502 merged and supported guest/provider reconciliation repaired real blockers.
+
+Before admitting UI estimates, what smallest governed team changes are justified by this evidence? Your previous plan proposed removing UI Engineer estimating/acting Tester prerequisites and UI Reviewer estimating Architect prerequisite, preserving planning, handlers and permissions; bounded per-command clocks and local robot commits; reviewer should estimate only independent review. Confirm or improve that plan, explain how Engineer and Reviewer can estimate in parallel and collaborate through proposal discussion without fake prerequisite assignments. Identify exact handoff details needed for Admin integration. We will obtain real profile catalog/readbacks before applying changes, and only normal proposals/Decisions can admit acting work. No verification-only tasks. Do not implement, invent estimates or claim configuration adopted.
+
+Keep this useful discussion brief: team changes, risks/questions for UI owners, and concrete next step. Existing UI source f0ab91091fcb52e8f8e83746fe3438fa9345d410; UI objective repo_2ee1a43ee16908af at2d05cf0e443771781c04456926eedaa10d7dfdf8 objectives/core.md. Current gap: Admin sets frame.atlasEndpoints.activity while header consumes frame.endpoints.activity; producer rows differ from ActivityIntervalItem, which currently requires executionId even when no canonical execution ID exists. UI contract first, then an agent-authored Admin integration proposal. Current user explicitly authorizes parallel team effort within measured supply and traditional admission. Check authoritative clock before separate reads/commands, reserve closeout and respond; no native subagents.
