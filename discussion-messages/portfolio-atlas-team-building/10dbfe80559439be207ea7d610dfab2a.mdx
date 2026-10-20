@@ -1,0 +1,170 @@
+---
+schemaVersion: treeseed.discussion-message/v1
+id: 10dbfe80559439be207ea7d610dfab2a
+discussionRef:
+  store: treedx
+  model: discussion
+  id: portfolio-atlas-team-building
+  path: discussions/portfolio-atlas-team-building.mdx
+  revision: 1
+  digest: sha256:fcbe31f53e2990a8da562ce0d06b3ac11408fa10391a64013f2cc5485693d0e0
+authorRef:
+  store: postgresql
+  model: user
+  id: 49435480-41fe-4fae-b2f7-baceacea562a
+title: "Adrian Webb: portfolio-atlas-team-building"
+discussionId: portfolio-atlas-team-building
+authorId: 49435480-41fe-4fae-b2f7-baceacea562a
+authorType: user
+intent: discuss
+mentionedAgents:
+  - architect
+recipientIds:
+  - architect
+fileRefs: []
+contextRefs: []
+sourceMessageRefs: []
+createdAt: 2026-10-20T11:38:16.916Z
+---
+@platform/architect Your real team/proposal response is retained at Platform TreeDX 01a41e99d8ef4655db528a9c0a5fe086b3ed9e1d, discussion-messages/portfolio-atlas-team-building/response-bf65e6f97715b7e492d08790.mdx. Complete its admission-ready correction in the same JSON shape {team,profileChanges,proposal}. Keep the meaningful Atlas Admin implementation objective, exact source/objective/design refs, acceptance criteria, and independent review.
+
+Concrete corrections:
+1. Governed source YAML uses activityProfiles.acting.dependsOn.agents, not dependencies.acting.agents. Admin Engineer estimating and Reviewer estimating each currently depend on architect. Remove those unused estimate prerequisites for this implementation-first proposal, as the already-approved exact architecture is supplied; do not create a new make-work Architect assignment. Engineer acting currently depends on tester; remove that as you intended. Preserve planning dependencies, handlers, permissions, and the existing clock discipline.
+2. Keep architect as consulted existing design authority only, not a new scheduled task. The selected execution team is admin/engineer then admin/reviewer. Add only necessary bounded acting/reviewing prompts: no native subagents; only actual source work and exact candidate review; no broad suites/typecheck campaign/guarantees; first clock and a new successful clock before every separate command, including failed reads, final clock as last tool. Engineer commits local changes using declared robot identity Admin Engineer <admin-engineer@agents.treeseed.localhost>; provider independently verifies/publishes. Never tell it not to commit. Reviewer must never fabricate implementation/review approval or verification results.
+3. proposal must contain only supported create fields: title,summary,request,proposalTypes,objectiveRefs,evidenceRefs,executionPlan. Remove independentReview and configurationStatus from proposal; use workItems.review:required for actual independent review. Preserve that explanation in team or summary/request instead. The class should be canonical 'engineer' (existing class binding is engineer); don't add a project-UUID prefix if create expects the configured class key. Do not invent estimates: actual selected owners/reviewer will estimate.
+
+This is a correction to YOUR existing real proposal, not verification-only work. Return the full corrected JSON promptly using provided context, do not scan unrelated sources. No mutation/approval/execution has occurred yet. Broad source inspection is unnecessary. The integrator will apply your governed changes and admit your proposal through normal public boundaries.
+
+ORIGINAL RESPONSE JSON (authorized full snapshot, preserving exact refs):
+{
+  "team": {
+    "sharedTeam": {
+      "id": "0d8835ed-b366-4163-8f91-58a4864822ef",
+      "slug": "treeseed"
+    },
+    "selection": "Proposal-selected Admin team; no persistent group membership or execution is claimed.",
+    "members": [
+      {
+        "address": "admin/architect",
+        "purpose": "Own the Admin-scoped implementation contract and dependencies.",
+        "choice": "Reuse existing ready agent.",
+        "dependencies": [],
+        "whyNeeded": "Keeps the projection inside Admin's browser-layer ownership and frames the bounded slice."
+      },
+      {
+        "address": "admin/engineer",
+        "purpose": "Implement the scoped assignment activity projection, endpoint, frame URL wiring, and minimal display type repair.",
+        "choice": "Reuse existing ready agent.",
+        "dependencies": [
+          "admin/architect"
+        ],
+        "whyNeeded": "Owns the actual code change in the target project."
+      },
+      {
+        "address": "admin/reviewer",
+        "purpose": "Independently review the implementation and focused evidence.",
+        "choice": "Reuse existing ready agent.",
+        "dependencies": [
+          "admin/engineer"
+        ],
+        "whyNeeded": "Provides review independent of implementation."
+      }
+    ],
+    "excludedRoles": "No new agents or UI-project roles are needed for this first Admin projection slice. A separate Tester, researcher, writer, releaser, or coordinator implementation task would add a role without a required first-slice dependency; broader suites and UI stages remain later work."
+  },
+  "profileChanges": [
+    {
+      "address": "admin/engineer",
+      "changes": {
+        "dependencies.acting.agents": []
+      },
+      "reason": "Remove the synthetic Tester prerequisite that blocks the explicitly authorized implementation-first delivery. Preserve handlers and permissions."
+    }
+  ],
+  "proposal": {
+    "title": "Admin: scoped Atlas assignment activity projection",
+    "summary": "Expose real assignment-backed activity for the selected team and operating day through the authenticated Admin projection surface, preserving incomplete-versus-complete-empty semantics.",
+    "request": "Implement a bounded first slice from the approved activity design. Reuse Admin's authenticated projection route and public API facade. Do not fabricate execution IDs, usage, metric history, or review approval.",
+    "proposalTypes": [
+      "implementation"
+    ],
+    "objectiveRefs": [
+      {
+        "store": "treedx",
+        "model": "objective",
+        "id": "admin-core",
+        "repository": "repo_ce20392ba3fd1501",
+        "commit": "b79fccc5d08343194553a62e543fc94869241c7d",
+        "path": "objectives/core.md"
+      }
+    ],
+    "evidenceRefs": [
+      {
+        "store": "treedx",
+        "model": "discussion-message",
+        "id": "response-a02614008e409bc07f0a3a72",
+        "repository": "repo_ce20392ba3fd1501",
+        "commit": "6c53e2a9ac84bfe26cc9e7cf3ff7edb426a265c1",
+        "path": "discussion-messages/ui-atlas-center-vitals-activity-architecture/response-a02614008e409bc07f0a3a72.mdx"
+      }
+    ],
+    "executionPlan": {
+      "workItems": [
+        {
+          "id": "admin-scoped-assignment-activity",
+          "activity": "acting",
+          "agentClass": "4c520946-e4c3-460d-a50f-255b65c78451:engineer",
+          "workspace": "git",
+          "review": "required",
+          "maximumReviewCycles": 2,
+          "dependsOn": [],
+          "objective": "Add an authenticated Admin activity projection and JSON endpoint backed by the complete paginated team assignment inventory; wire its URL into the Atlas frame and repair only the minimal activity display contract.",
+          "acceptanceCriteria": [
+            "Scope activity by team, optional exact workDayId, and selected local operating-day bounds in the configured timezone; include assignment intervals overlapping the day, including cross-midnight and retained failed assignments.",
+            "Use stable assignment id/stateVersion and source-backed project, agent/class, original attempt activity/profile, and actual attempt/execution timestamps; open intervals have null finish. Do not infer runtime or CPU/model usage from claimed duration, fabricate execution IDs, or create synthetic metric history.",
+            "A complete empty inventory yields an explicitly complete empty delta; any incomplete inventory read yields unavailable/degraded behavior, never a successful empty delta. Preserve authentication and no-store behavior.",
+            "Provide focused available checks for a genuine completed assignment, complete-empty versus unavailable inventory, day/workday boundaries, and repeat polling without duplicates. These checks are acceptance targets, not claimed as run.",
+            "Obtain independent code review. Defer broad suites, scenes, and broader guarantees; do not report them as passed."
+          ],
+          "requiredCapabilities": [
+            "treeseed.engineering.code-change"
+          ],
+          "requestedPermissions": {
+            "content": {
+              "read": [
+                "agent",
+                "knowledge",
+                "objective",
+                "proposal",
+                "decision"
+              ],
+              "write": []
+            },
+            "tools": [
+              "source.read",
+              "source.write",
+              "verification"
+            ]
+          },
+          "contextRefs": [
+            {
+              "store": "git",
+              "model": "repository",
+              "id": "treeseed-ai/admin",
+              "repository": "treeseed-ai/admin",
+              "commit": "930a9048044c0eddd078016f660fb5ed1b079279"
+            }
+          ]
+        }
+      ]
+    },
+    "independentReview": {
+      "agent": "admin/reviewer",
+      "dependsOn": [
+        "admin-scoped-assignment-activity"
+      ],
+      "scope": "Review source authority, day-overlap and scoping behavior, unavailable-versus-complete-empty response semantics, auth/no-store preservation, focused check evidence, and regressions against the acceptance criteria. Do not treat implementation completion as approval."
+    },
+    "configurationStatus": "These are proposed governed profile changes and a proposal artifact for the integrator to apply through supported shared-backend operations; none are represented as active, approved, or executed."
+  }
+}
