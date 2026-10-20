@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: treedx-control-plane-proxy-composition
-bookId: platform-delivery-history
+projectId: 3475f8d8-06c1-4fba-8d7a-6f2a9b48a6d3
+bookRef:
+  store: treedx
+  model: book
+  id: platform-delivery-history
+  path: books/platform-delivery-history.md
+  revision: 1
+  digest: sha256:bd4832ad9eee821476dd21abfd5a42c428c90c9660839724aec7f00dcd044041
 slug: treedx-control-plane-proxy-composition
 title: TreeDX Control Plane Proxy Composition Evidence
 summary: Archived immutable composition evidence for the TreeDX control-plane
@@ -9,6 +16,7 @@ summary: Archived immutable composition evidence for the TreeDX control-plane
 status: published
 visibility: team
 order: 60
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds: []
@@ -113,4 +121,3 @@ documentationUrls: []
 }
 
 ```
-

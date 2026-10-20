@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: project-architecture-migration
-bookId: platform-delivery-history
+projectId: 3475f8d8-06c1-4fba-8d7a-6f2a9b48a6d3
+bookRef:
+  store: treedx
+  model: book
+  id: platform-delivery-history
+  path: books/platform-delivery-history.md
+  revision: 1
+  digest: sha256:bd4832ad9eee821476dd21abfd5a42c428c90c9660839724aec7f00dcd044041
 slug: project-architecture-migration
 title: Project Architecture Migration
 summary: Historical project architecture migration record superseded by virtual
@@ -9,6 +16,7 @@ summary: Historical project architecture migration record superseded by virtual
 status: published
 visibility: team
 order: 40
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds: []
@@ -215,4 +223,3 @@ Production reads the production channel. Staging reads the staging channel. Loca
 6. Push-triggered software content workflows are removed only after all matching content repositories are authoritative.
 
 No production content or repository mutation is authorized by this document alone.
-

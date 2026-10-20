@@ -1,13 +1,21 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: production-readiness-migration-ledger
-bookId: platform-delivery-history
+projectId: 3475f8d8-06c1-4fba-8d7a-6f2a9b48a6d3
+bookRef:
+  store: treedx
+  model: book
+  id: platform-delivery-history
+  path: books/platform-delivery-history.md
+  revision: 1
+  digest: sha256:bd4832ad9eee821476dd21abfd5a42c428c90c9660839724aec7f00dcd044041
 slug: production-readiness-migration-ledger
 title: Production Readiness Migration Ledger
 summary: Historical execution ledger retained as immutable migration evidence.
 status: published
 visibility: team
 order: 30
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds: []
@@ -651,4 +659,3 @@ The first deliberately short four-agent workday then exposed a returned assignme
 The Agent Lab workspace-focus scene had previously passed while the isolated visual-audit team contained no project agent class, workday run, or event. The API-owned acceptance seed now creates its active Visual Audit Agent through `ProjectAgentClassService`, a safe queued capacity workday run, and 27 idempotent durable forensic events. The scene declares its visual-audit fixture role explicitly, so it refreshes those canonical API fixtures instead of trusting stale database state. Package regression coverage verifies the class, handler definition, queued run, and durable event rows.
 
 Authenticated browser run `20260813t151928371z` passed all 17 steps with no console errors, network errors, warnings, or blockers. It proves a visible Atlas agent node, 27-event bounded window, page 1/page 2 navigation, text filtering and reset, compact/expanded vitals, focused Atlas, Shrink, Escape ordering, and browser-Back restoration. The viewport evidence is under `.treeseed/scenes/runs/agent-lab-workspace-focus/20260813T151928371Z-20260813t151928371z/`; full-page captures remain diagnostic only. Current scene output occupies tens of megabytes, not gigabytes, and disk usage did not grow during the repeated acceptance runs.
-

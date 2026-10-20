@@ -1,13 +1,21 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: sdk-first-cutover-implementation-plan
-bookId: platform-delivery-history
+projectId: 3475f8d8-06c1-4fba-8d7a-6f2a9b48a6d3
+bookRef:
+  store: treedx
+  model: book
+  id: platform-delivery-history
+  path: books/platform-delivery-history.md
+  revision: 1
+  digest: sha256:bd4832ad9eee821476dd21abfd5a42c428c90c9660839724aec7f00dcd044041
 slug: sdk-first-cutover-implementation-plan
 title: SDK-First Standards, GitHub, and Cluster Cutover Ledger
 summary: Historical SDK-first cutover implementation ledger and release evidence.
 status: published
 visibility: team
 order: 50
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds: []
@@ -688,4 +696,3 @@ Mock-only, stale, skipped, mismatched-generation, or process-exit-only evidence 
 The SDK-first milestone completes only when SDK `0.13.0` is published from an accepted composition, both GitHub token and App modes pass, save/stage/release use the bounded PR-gated path, API/CLI/Agent integrations have their own accepted releases, the live SDK agent chain passes all three guarantee variants, and no consumer repository changed merely because SDK published a compatible artifact.
 
 The portfolio migration completes only when all `docs/standards-dev.md` acceptance criteria pass across the 31 live project records, the collapsed and multi-node profiles consume the same contracts, hosted OpenTofu/release authority is restored separately, and the transitional Market-root exact-commit workflow is retired without entering Platform custody.
-

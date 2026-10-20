@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: admin-migration-development-release-generation-81
-bookId: platform-integration
+projectId: 3475f8d8-06c1-4fba-8d7a-6f2a9b48a6d3
+bookRef:
+  store: treedx
+  model: book
+  id: platform-integration
+  path: books/platform-integration.md
+  revision: 1
+  digest: sha256:c1a6e588702e22db6e552df88d7265a1dd617eac808c58b0449272e1f22649d7
 slug: admin-migration-development-release-generation-81
 title: "Historical: Admin migration and development/release generation 81"
 summary: Historical generation-81 acceptance record, preserved for provenance;
@@ -9,6 +16,7 @@ summary: Historical generation-81 acceptance record, preserved for provenance;
 status: published
 visibility: team
 order: 10
+groupIds: []
 contributors:
   - adrian-webb
   - codex
@@ -93,4 +101,3 @@ Use the manager-owned `/usr/bin/trsd` wrapper so the canonical API URL and local
 The authoritative Platform library binding is repository `repo_c3626e5d3fa0dc9e`, tracking `refs/remotes/origin/staging`. At certification it resolved `b4e32c8b8d3031fc142230595b2fc34f5f728c9b` with a ready, non-stale search index. Always verify `trsd library status platform` and use the returned exact commit for reproducible reads.
 
 Generation 73 remains available as an exact Git/catalog rollback lock at Platform commit `0af2640405503e72a13b455193355f944bd41a94`, and historical receipt `receipt-1787861393566.json` remains retained. Its live rollback and final restoration were proven during Deployment rc110/rc111 acceptance. Generation 81 is the new certified integration point for authenticated agent chat work.
-

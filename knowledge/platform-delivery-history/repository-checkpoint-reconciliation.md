@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: repository-checkpoint-reconciliation
-bookId: platform-delivery-history
+projectId: 3475f8d8-06c1-4fba-8d7a-6f2a9b48a6d3
+bookRef:
+  store: treedx
+  model: book
+  id: platform-delivery-history
+  path: books/platform-delivery-history.md
+  revision: 1
+  digest: sha256:bd4832ad9eee821476dd21abfd5a42c428c90c9660839724aec7f00dcd044041
 slug: repository-checkpoint-reconciliation
 title: Repository checkpoint reconciliation
 summary: How archived library checkpoints were preserved and reconciled without
@@ -9,6 +16,7 @@ summary: How archived library checkpoints were preserved and reconciled without
 status: published
 visibility: team
 order: 100
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds: []
@@ -47,4 +55,3 @@ API [#276](https://github.com/treeseed-ai/api/pull/276) removed remaining human/
 ## Delivery evidence
 
 API rc95 was promoted from `4a24282050675e2b64b733d4d6d6fd36f1988e9f` without rebuilding accepted OCI artifacts. [Platform #463](https://github.com/treeseed-ai/platform/pull/463) and [#464](https://github.com/treeseed-ai/platform/pull/464) bind generation 226 and Deployment rc275. [Platform #462](https://github.com/treeseed-ai/platform/issues/462) is the authoritative work and acceptance record. Retain recovery bundles; publication of recovered content is not authorization to delete the only remaining historical copy.
-

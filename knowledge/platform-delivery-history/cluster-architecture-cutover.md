@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: cluster-architecture-cutover
-bookId: platform-delivery-history
+projectId: 3475f8d8-06c1-4fba-8d7a-6f2a9b48a6d3
+bookRef:
+  store: treedx
+  model: book
+  id: platform-delivery-history
+  path: books/platform-delivery-history.md
+  revision: 1
+  digest: sha256:bd4832ad9eee821476dd21abfd5a42c428c90c9660839724aec7f00dcd044041
 slug: cluster-architecture-cutover
 title: TreeSeed Cluster Architecture and Cutover
 summary: Historical cluster architecture and cutover plan superseded by the
@@ -9,6 +16,7 @@ summary: Historical cluster architecture and cutover plan superseded by the
 status: published
 visibility: team
 order: 20
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds: []
@@ -474,4 +482,3 @@ The cluster architecture cutover is complete only when:
 - the transitional Market-root and exact-commit propagation workflows are retired without adding Market or Market API to Platform custody.
 
 Until then, this architecture is the target cutover contract. The current Platform clone remains the migration workbench, not evidence that the cluster, agent system, learning loop, or production path is ready.
-
