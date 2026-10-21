@@ -1,0 +1,30 @@
+---
+schemaVersion: treeseed.discussion-message/v1
+id: a32bad74a1ed142f528ffa3a5a706937
+discussionRef:
+  store: treedx
+  model: discussion
+  id: portfolio-atlas-team-building
+  path: discussions/portfolio-atlas-team-building.mdx
+  revision: 1
+  digest: sha256:fcbe31f53e2990a8da562ce0d06b3ac11408fa10391a64013f2cc5485693d0e0
+authorRef:
+  store: postgresql
+  model: user
+  id: 49435480-41fe-4fae-b2f7-baceacea562a
+title: "Adrian Webb: portfolio-atlas-team-building"
+discussionId: portfolio-atlas-team-building
+authorId: 49435480-41fe-4fae-b2f7-baceacea562a
+authorType: user
+intent: discuss
+mentionedAgents:
+  - architect
+  - engineer
+recipientIds:
+  - architect
+fileRefs: []
+contextRefs: []
+sourceMessageRefs: []
+createdAt: 2026-10-21T11:06:04.397Z
+---
+@api/architect @api/engineer @platform/architect Diagnose the real rc114 delivery blocker without implementation in discussion. Protected API d0d726be, head38892d88 and passing PR synthetic merge5205f700 have exactly identical Git tree0a49d0cdd9eeaaeb4123439159fbe8e49a57cfd5. PR required39569564428 passed1000/1000steps. Protected Verify39584213370 now FAILED: all1000scenesteps BLOCKED because the API full prerequisite Vitest process exited1, while its recorded checks show2232total/2232passed,0failed/skipped/todo. API prerequisite ran10:48:48–11:00:35 (~707s), no signal; independent Reviewer prerequisite200/200passed exit0. Full job regular verify:direct and nativePostgres gates passed. Existing scene prerequisite receipt only has command/exit/checkcounts/genericreason; Actions failedstep logs show no full Vitest JSON error or captured stderr, so cause is NOT established and no rerun requested. Candidate publisher39584213555 remains running on same protected commit. Inspect owning API test/globalsetup/teardown paths and existing Reviewer prerequisite collection to identify how all assertion checks can pass while exit1, where actual process error evidence should already live, and the smallest concrete repair/proposal if diagnostics are lost. Do not weaken test gates, extend bounds, rerun blindly or call it a pass. Preserve original failed receipt. Existing API553 is near body limit; SDK429 is current evidence authority. This is a real publication blocker; return source-grounded questions/findings and distinguish inference from reproduction.
